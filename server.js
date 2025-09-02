@@ -11,7 +11,7 @@ app.use(express.json());
 // --- MongoDB Connection ---
 // Replace '<your_connection_string>' with your actual MongoDB connection string
 // For local MongoDB: 'mongodb://localhost:27017/contactdb'
-mongoose.connect('mongodb://localhost:27017/contactdb', {
+mongoose.connect('add your connection string here', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -75,4 +75,5 @@ app.delete('/api/contacts/:id', async (req, res) => {
 // --- Start the Server ---
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+
 });
