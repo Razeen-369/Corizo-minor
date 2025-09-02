@@ -50,6 +50,13 @@ npm install
 ```
 ### 3. Start the Backend Server
 
+**This is a critical step.** The project is configured to connect to a database running on `localhost`. You must update the connection string to point to your own MongoDB database.
+
+1.  Open the `server.js` file in your code editor.
+2.  Find the `mongoose.connect(...)` line.
+3.  **Add your connection string**
+
+   
 Make sure your local MongoDB server is running.
 In the same terminal, run:
 ```bash
